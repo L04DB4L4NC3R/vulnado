@@ -2,7 +2,9 @@ pipeline {
 	agent any
 	stages {
 		stage("clean") {
-			"mvn clean install sonar:sonar"
+			steps {
+				sh 'mvn clean install sonar:sonar'
+			}
 		}
 		stage("SonarQube") {
 			 environment {
