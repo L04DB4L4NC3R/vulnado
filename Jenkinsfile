@@ -6,7 +6,7 @@ pipeline {
         scannerHome = tool 'SonarQube Scanner'
     }
 			steps {
-        withSonarQubeEnv ('SonarQube Scanner') {
+        withSonarQubeEnv ('SonarQube') {
             sh '${scannerHome}/bin/sonar-scanner'
             sh 'cat .scannerwork/report-task.txt'
         }
