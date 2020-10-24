@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage("clean") {
 			steps {
-				sh 'mvn clean install sonar:sonar'
+				sh 'mvn clean sonar:sonar'
 			}
 		}
 		stage("SonarQube") {
