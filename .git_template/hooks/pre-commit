@@ -2,4 +2,4 @@
 
 echo This runs before committing!
 
-exit 1
+exit 0
