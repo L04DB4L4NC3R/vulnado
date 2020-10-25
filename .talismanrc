@@ -1,0 +1,3 @@
+fileignoreconfig:
+- filename: sample_secrets.env
+  checksum: 928bab8e0502912678bc7fd895547ad59e2465d5ad0051fde7b85db80830737e
